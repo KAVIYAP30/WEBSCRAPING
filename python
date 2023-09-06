@@ -1,0 +1,6 @@
+from bs4 import BeautifulSoup
+import requests
+url='https://www.w3schools.com/c/index.php'
+page=requests.get(url)
+soup=BeautifulSoup(page.text,'html')
+print(soup)
